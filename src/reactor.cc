@@ -281,8 +281,7 @@ namespace cybam {
     }
 
     //________________________________________________________________________
-    std::set<cyclus::BidPortfolio<Material>::Ptr> Reactor::GetMatlBids(
-                                                                            cyclus::CommodMap<Material>::type& commod_requests) {
+    std::set<cyclus::BidPortfolio<Material>::Ptr> Reactor::GetMatlBids( cyclus::CommodMap<Material>::type& commod_requests) {
         using cyclus::BidPortfolio;
 
         std::set<BidPortfolio<Material>::Ptr> ports;
